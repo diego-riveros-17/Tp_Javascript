@@ -8,12 +8,10 @@ const estudiante = {
 let acum_nota = 0;
 
 for (let i = 0; i < estudiante.notas.length; i++) {
-  estudiante.acum_nota = estudiante.acum_nota + estudiante.notas[i];
+  acum_nota = acum_nota + estudiante.notas[i];
 }
 
-estudiante.prom_nota = (estudiante.acum_nota / estudiante.notas.length).toFixed(
-  1,
-);
+estudiante.prom_nota = (acum_nota / estudiante.notas.length).toFixed(1);
 
 if (estudiante.prom_nota > 7) {
   estudiante.notaConceptual = "Muy Bueno";
