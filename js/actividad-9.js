@@ -1,10 +1,11 @@
 const estudiante = {
   nombre: "Diego Riveros",
   notas: [1, 4.55, 4.35, 5.5, 7.86],
-  acum_nota: 0,
   prom_nota: 0,
   notaConceptual: "S/N",
 };
+
+let acum_nota = 0;
 
 for (let i = 0; i < estudiante.notas.length; i++) {
   estudiante.acum_nota = estudiante.acum_nota + estudiante.notas[i];
